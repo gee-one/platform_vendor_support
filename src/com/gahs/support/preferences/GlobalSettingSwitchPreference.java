@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.support.preferences;
+package com.gahs.support.preferences;
 
 import android.content.Context;
 import androidx.preference.SwitchPreference;

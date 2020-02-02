@@ -1,13 +1,11 @@
 /*
- * Copyright (C) 2011 Sergey Margaritov
- * Copyright (C) 2013 Slimroms
- * Copyright (C) 2015 The TeamEos Project
+ * Copyright (C) 2017 AICP
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -16,26 +14,24 @@
  * limitations under the License.
  */
 
-package com.dirtyunicorns.support.colorpicker;
+package com.gahs.support.preferences;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.dirtyunicorns.support.preferences.SecureSettingsStore;
+public class CustomSecureSeekBarPreference extends CustomSeekBarPreference {
 
-public class ColorPickerSecurePreference extends ColorPickerPreference {
-
-    public ColorPickerSecurePreference(Context context, AttributeSet attrs, int defStyle) {
+    public CustomSecureSeekBarPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
     }
 
-    public ColorPickerSecurePreference(Context context, AttributeSet attrs) {
+    public CustomSecureSeekBarPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
         setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
     }
 
-    public ColorPickerSecurePreference(Context context) {
+    public CustomSecureSeekBarPreference(Context context) {
         super(context, null);
         setPreferenceDataStore(new SecureSettingsStore(context.getContentResolver()));
     }

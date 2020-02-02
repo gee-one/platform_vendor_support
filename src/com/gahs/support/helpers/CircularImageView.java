@@ -1,4 +1,4 @@
-package com.dirtyunicorns.support.helpers;
+package com.gahs.support.helpers;
 
 import android.annotation.SuppressLint;
 import androidx.appcompat.widget.AppCompatImageView;
@@ -15,7 +15,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 
-import com.dirtyunicorns.support.R;
+import com.gahs.support.R;
 
 public class CircularImageView extends AppCompatImageView {
 
